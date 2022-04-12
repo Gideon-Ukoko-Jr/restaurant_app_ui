@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:restaurant_app_ui/data/data.dart';
+import 'package:restaurant_app_ui/widgets/recent_orders.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -30,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ],
       ),
       body: ListView(
-        children: <Widget>[
+        children: [
           Padding(
             padding: const EdgeInsets.all(20.0),
             child: TextField(
@@ -60,6 +61,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
           ),
+          RecentOrders(),
         ],
       ),
     );
