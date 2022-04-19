@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:restaurant_app_ui/data/data.dart';
 import 'package:restaurant_app_ui/models/order.dart';
@@ -98,7 +97,7 @@ class RecentOrders extends StatelessWidget {
             ),
           ),
         ),
-        Container(
+        SizedBox(
           height: 120.0,
           child: ListView.builder(
             physics: const BouncingScrollPhysics(),
